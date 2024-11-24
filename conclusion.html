@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion and Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url('home page.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        nav a {
+            margin: 0 15px;
+            color: #18da2c;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .content-section {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #18da2c;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #18da2c;
+            text-align: left;
+        }
+        th {
+            background-color: rgba(24, 218, 44, 0.2);
+            color: #18da2c;
+        }
+        .feedback-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #18da2c;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #18da2c;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #18da2c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #15b825;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conclusion and Feedback</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#anime">Anime</a>
+        <a href="index.html#manga">Manga</a>
+        <a href="conclusion.html">Conclusion</a>
+    </nav>
+    <main>
+        <section class="content-section">
+            <h2>Summary Table</h2>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Anime</th>
+                    <th>Manga</th>
+                </tr>
+                <tr>
+                    <td>Popular Series</td>
+                    <td>Attack on Titan, Demon Slayer</td>
+                    <td>One Piece, Naruto</td>
+                </tr>
+                <tr>
+                    <td>Classic Works</td>
+                    <td>Dragon Ball, Sailor Moon</td>
+                    <td>Astro Boy, Dragon Ball</td>
+                </tr>
+                <tr>
+                    <td>Modern Hits</td>
+                    <td>Jujutsu Kaisen, Chainsaw Man</td>
+                    <td>My Hero Academia, Black Clover</td>
+                </tr>
+                <tr>
+                    <td>Industry Impact</td>
+                    <td>Global streaming platforms</td>
+                    <td>Digital manga platforms</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="content-section">
+            <h2>Feedback Form</h2>
+            <form class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="favorite">Favorite Series:</label>
+                    <input type="text" id="favorite" name="favorite">
+                </div>
+                <div class="form-group">
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating (1-5):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                </div>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
